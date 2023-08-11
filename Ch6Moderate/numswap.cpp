@@ -3,16 +3,15 @@
 #include<bits/stdc++.h>
 
 void swap(int a,int b){
-    int diff;
     if (b>a){
-        diff= b-a;
-        b = b - diff;
-        a = b + diff;
+        a = b-a;
+        b = b - a;
+        a = b + a;
     }
     else{
-        diff= a-b;
-        a = a - diff;
-        b = a + diff;
+        b= a-b;
+        a = a - b;
+        b = a + b;
     }
     std::cout << "swapped value of a is" << a << std::endl << "and value of b is" << b << std::endl;
 }
